@@ -56,4 +56,9 @@ function modificarLocal(n1) {
 
 let o2 = {user: 'Juana'}
 modificarLocal(o2) // paso por referencia 
+o2.edad = 23
 console.log(o2)
+
+sumar.autor = 'Yo'
+console.log(typeof sumar)
+console.log(sumar)
