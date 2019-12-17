@@ -1,0 +1,23 @@
+<section>
+    <div>
+        <label for="nombre">Dime tu nombre</label>
+        <input type="text" id="nombre" [(ngModel)]="nombre">
+    </div>
+    <div>
+        <button type="button" (click)='onAdd()'>Añadir</button>
+        <button type="button" (click)='onBorrar()'>Borrar</button>
+    </div>
+    <div *ngIf="nombre">
+        <h4>Etiqueta output</h4>
+        <output>Hola {{nombre}}</output>
+    </div>
+    <div *ngIf="nombre">
+        <h4>Otra Etiqueta</h4>
+        <p>Hola {{nombre}}</p>
+    </div>
+    <div>
+        <ul>
+            <li *ngFor="let item of aNombres">{{item}}</li>
+        </ul>
+    </div>
+</section>
